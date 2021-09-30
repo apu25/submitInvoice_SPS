@@ -1,7 +1,7 @@
 {
   "name": "Get each shipment links from SPS",
   "description": "extract shipment links from result of Saved Search",
-  "main": "extract url - update PQ file -submit ASN.xaml",
+  "main": "Main.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.11.1-preview]",
     "UiPath.Mail.Activities": "[1.11.2-preview]",
@@ -13,7 +13,7 @@
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "21.6.0.0",
-  "projectVersion": "1.0.30",
+  "projectVersion": "1.0.35",
   "runtimeOptions": {
     "autoDispose": false,
     "isPausable": true,
@@ -50,8 +50,8 @@
       "output": []
     },
     {
-      "filePath": "extract url - update PQ file -submit ASN.xaml",
-      "uniqueId": "f5492c0f-d005-40f3-a6cd-b256db4a01fe",
+      "filePath": "Main.xaml",
+      "uniqueId": "5fa38305-bda6-457e-9805-c94f3b258316",
       "input": [],
       "output": []
     }
