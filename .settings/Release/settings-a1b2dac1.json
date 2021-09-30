@@ -57,5 +57,6 @@
   "UiPath.UIAutomationNext.Activities.SearchStepsWeb.EdgeInteractionMode": "DebuggerApi",
   "UiPath.UIAutomationNext.Activities.SearchStepsJava.InteractionMode": "HardwareEvents",
   "UiPath.UIAutomationNext.Activities.SearchStepsSAP.InteractionMode": "HardwareEvents",
-  "UiPath.UIAutomationNext.Activities.VerifyExecution.VerifyActivities": "False"
+  "UiPath.UIAutomationNext.Activities.VerifyExecution.VerifyActivities": "False",
+  "UiPath.UIAutomationNext.Activities.Generic.ShowClosestMatchesInSearchError": "True"
 }

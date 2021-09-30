@@ -1,0 +1,11 @@
+﻿{
+  "Id": "s6GvUYYWzUuURWbLgcr_Ug",
+  "Reference": "5oHt9l70c0CguI0D5bQfwQ/s6GvUYYWzUuURWbLgcr_Ug",
+  "Name": "Page_Invoice_quick_entry",
+  "Type": "App",
+  "Created": "2021-09-29T09:49:24.0324003Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=21.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2021-09-29T09:49:24.0324003Z"
+}

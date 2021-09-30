@@ -1,0 +1,13 @@
+﻿{
+  "Id": "BQAiDx3gcUWymFmZcLyurw",
+  "Reference": "5oHt9l70c0CguI0D5bQfwQ/BQAiDx3gcUWymFmZcLyurw",
+  "ParentRef": "5oHt9l70c0CguI0D5bQfwQ/BNcJfHg8YkqeT0z62p0AmQ",
+  "Name": "Shipment/Order Status",
+  "Type": "Element",
+  "TaxonomyType": "Dropdown",
+  "Created": "2021-09-29T09:49:24.8499825Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=21.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2021-09-29T09:49:24.8499825Z"
+}

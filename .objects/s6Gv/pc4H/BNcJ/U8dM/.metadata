@@ -1,0 +1,13 @@
+﻿{
+  "Id": "U8dM_hoaq0CmYXvcJCPwTQ",
+  "Reference": "5oHt9l70c0CguI0D5bQfwQ/U8dM_hoaq0CmYXvcJCPwTQ",
+  "ParentRef": "5oHt9l70c0CguI0D5bQfwQ/BNcJfHg8YkqeT0z62p0AmQ",
+  "Name": "Weight UOM",
+  "Type": "Element",
+  "TaxonomyType": "Dropdown",
+  "Created": "2021-09-29T09:49:25.0993575Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=21.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2021-09-29T09:49:25.0993575Z"
+}

@@ -1,0 +1,12 @@
+﻿{
+  "Id": "BNcJfHg8YkqeT0z62p0AmQ",
+  "Reference": "5oHt9l70c0CguI0D5bQfwQ/BNcJfHg8YkqeT0z62p0AmQ",
+  "ParentRef": "5oHt9l70c0CguI0D5bQfwQ/pc4HJBAivkONa9iLEmDUxg",
+  "Name": "Chrome: Fulfillment : SPS Commerce",
+  "Type": "Screen",
+  "Created": "2021-09-29T09:49:24.0804416Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=21.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2021-09-29T09:49:24.0804416Z"
+}

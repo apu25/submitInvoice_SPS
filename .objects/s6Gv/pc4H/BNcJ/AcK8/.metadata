@@ -1,0 +1,13 @@
+﻿{
+  "Id": "AcK8r06g5E2lcSKfgP0_JA",
+  "Reference": "5oHt9l70c0CguI0D5bQfwQ/AcK8r06g5E2lcSKfgP0_JA",
+  "ParentRef": "5oHt9l70c0CguI0D5bQfwQ/BNcJfHg8YkqeT0z62p0AmQ",
+  "Name": "AP Vendor #",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Created": "2021-09-29T09:49:24.236521Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=21.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2021-09-29T09:49:24.236521Z"
+}

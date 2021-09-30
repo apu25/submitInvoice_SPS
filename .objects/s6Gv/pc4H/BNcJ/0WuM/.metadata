@@ -1,0 +1,13 @@
+﻿{
+  "Id": "0WuMpgjWJ0mhjf9aBbTyGQ",
+  "Reference": "5oHt9l70c0CguI0D5bQfwQ/0WuMpgjWJ0mhjf9aBbTyGQ",
+  "ParentRef": "5oHt9l70c0CguI0D5bQfwQ/BNcJfHg8YkqeT0z62p0AmQ",
+  "Name": "Number of Cartons",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Created": "2021-09-29T09:49:25.0264138Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=21.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2021-09-29T09:49:25.0264138Z"
+}

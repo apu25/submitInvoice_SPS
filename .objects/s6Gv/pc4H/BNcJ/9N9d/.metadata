@@ -1,0 +1,13 @@
+﻿{
+  "Id": "9N9dZHy340q60zz_e8GIsQ",
+  "Reference": "5oHt9l70c0CguI0D5bQfwQ/9N9dZHy340q60zz_e8GIsQ",
+  "ParentRef": "5oHt9l70c0CguI0D5bQfwQ/BNcJfHg8YkqeT0z62p0AmQ",
+  "Name": "Mdse Vendor #",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Created": "2021-09-29T09:49:24.3306015Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=21.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2021-09-29T09:49:24.3306015Z"
+}

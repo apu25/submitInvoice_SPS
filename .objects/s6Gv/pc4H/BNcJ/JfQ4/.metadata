@@ -1,0 +1,16 @@
+﻿{
+  "Id": "JfQ4C4mBfkCbfJlgNZDUxQ",
+  "Reference": "5oHt9l70c0CguI0D5bQfwQ/JfQ4C4mBfkCbfJlgNZDUxQ",
+  "ParentRef": "5oHt9l70c0CguI0D5bQfwQ/BNcJfHg8YkqeT0z62p0AmQ",
+  "Name": "Save All",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Created": "2021-09-29T12:14:07.5707652Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=21.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2021-09-29T12:15:58.5610009Z",
+  "UpdatedBy": [
+    "UiPath.Platform, Version=21.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

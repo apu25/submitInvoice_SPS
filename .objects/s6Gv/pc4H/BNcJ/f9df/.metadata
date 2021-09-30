@@ -1,0 +1,13 @@
+﻿{
+  "Id": "f9df4sUAE0CgqOk-YGHemw",
+  "Reference": "5oHt9l70c0CguI0D5bQfwQ/f9df4sUAE0CgqOk-YGHemw",
+  "ParentRef": "5oHt9l70c0CguI0D5bQfwQ/BNcJfHg8YkqeT0z62p0AmQ",
+  "Name": "SCAC",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Created": "2021-09-29T09:49:24.7823235Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=21.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2021-09-29T09:49:24.7823235Z"
+}

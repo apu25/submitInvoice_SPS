@@ -1,0 +1,13 @@
+﻿{
+  "Id": "IxA6wxWwP0WA9yIFbuyUrg",
+  "Reference": "5oHt9l70c0CguI0D5bQfwQ/IxA6wxWwP0WA9yIFbuyUrg",
+  "ParentRef": "5oHt9l70c0CguI0D5bQfwQ/BNcJfHg8YkqeT0z62p0AmQ",
+  "Name": "Allowance or",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Created": "2021-09-29T11:27:31.5283043Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=21.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2021-09-29T11:27:31.5283043Z"
+}

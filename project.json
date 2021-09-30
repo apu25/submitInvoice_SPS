@@ -1,23 +1,22 @@
 {
   "name": "Get each shipment links from SPS",
   "description": "extract shipment links from result of Saved Search",
-  "main": "Main.xaml",
+  "main": "extract url - update PQ file -submit ASN.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.11.1-preview]",
     "UiPath.Mail.Activities": "[1.11.2-preview]",
-    "UiPath.System.Activities": "[21.8.0-preview]",
+    "UiPath.System.Activities": "[21.10.0-preview]",
     "UiPath.Terminal.Activities": "[2.3.0]",
-    "UiPath.UIAutomation.Activities": "[21.8.0-preview]"
+    "UiPath.UIAutomation.Activities": "[21.10.0-preview]"
   },
   "webServices": [],
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "21.6.0.0",
-  "projectVersion": "1.0.14",
+  "projectVersion": "1.0.30",
   "runtimeOptions": {
     "autoDispose": false,
     "isPausable": true,
-    "isAttended": false,
     "requiresUserInteraction": true,
     "supportsPersistence": false,
     "excludedLoggedData": [
@@ -45,8 +44,14 @@
   "expressionLanguage": "VisualBasic",
   "entryPoints": [
     {
-      "filePath": "Main.xaml",
-      "uniqueId": "ca969a46-0ff5-4b55-87cb-1920baec113c",
+      "filePath": "Extract  SO url to csv file in SPS.xaml",
+      "uniqueId": "c3060221-e576-431a-b860-52312560d8e7",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "extract url - update PQ file -submit ASN.xaml",
+      "uniqueId": "f5492c0f-d005-40f3-a6cd-b256db4a01fe",
       "input": [],
       "output": []
     }

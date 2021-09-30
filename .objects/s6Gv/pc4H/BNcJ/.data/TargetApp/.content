@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-16"?>
+<TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" ContentHash="v2GvNrhPNkOIuzY5bNYFnw" Selector="&lt;html app='chrome.exe' htmlwindowname='sps-commerce-platform' title='Fulfillment : SPS Commerce' /&gt;" Url="https://commerce.spscommerce.com/fulfillment/transactions/batchProcess/" xmlns="http://schemas.uipath.com/workflow/activities/uix">
+  <imageRef attrName="IconBase64" xmlns="">0aN93PRM-o027vmcTOT7Kiw</imageRef>
+  <imageRef attrName="InformativeScreenshot" originalValue="515d33fab46b8792030f02425a38ecde.png" xmlns="">0FtFf6bA65U6NAz5DPFs8SA</imageRef>
+</TargetApp>

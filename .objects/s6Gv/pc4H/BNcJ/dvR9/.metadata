@@ -1,0 +1,13 @@
+﻿{
+  "Id": "dvR9Ud98oUmT0p_oeEFs8A",
+  "Reference": "5oHt9l70c0CguI0D5bQfwQ/dvR9Ud98oUmT0p_oeEFs8A",
+  "ParentRef": "5oHt9l70c0CguI0D5bQfwQ/BNcJfHg8YkqeT0z62p0AmQ",
+  "Name": "Discount Days",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Created": "2021-09-29T09:49:24.6110152Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=21.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2021-09-29T09:49:24.6110152Z"
+}

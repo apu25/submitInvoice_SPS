@@ -1,0 +1,13 @@
+﻿{
+  "Id": "7wiZ7aPjhk-tn_hAqrGARg",
+  "Reference": "5oHt9l70c0CguI0D5bQfwQ/7wiZ7aPjhk-tn_hAqrGARg",
+  "ParentRef": "5oHt9l70c0CguI0D5bQfwQ/BNcJfHg8YkqeT0z62p0AmQ",
+  "Name": "Bill of Lading #",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Created": "2021-09-29T09:49:24.9548488Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=21.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2021-09-29T09:49:24.9548488Z"
+}

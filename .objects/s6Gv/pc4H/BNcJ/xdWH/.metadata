@@ -1,0 +1,13 @@
+﻿{
+  "Id": "xdWHkmSpuUetLVsfDkf4IQ",
+  "Reference": "5oHt9l70c0CguI0D5bQfwQ/xdWHkmSpuUetLVsfDkf4IQ",
+  "ParentRef": "5oHt9l70c0CguI0D5bQfwQ/BNcJfHg8YkqeT0z62p0AmQ",
+  "Name": "Carrier PRO/Freight",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Created": "2021-09-29T09:49:24.4041432Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=21.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2021-09-29T09:49:24.4041432Z"
+}

@@ -1,0 +1,13 @@
+﻿{
+  "Id": "44x--p1GsUiMMqEi16oE5Q",
+  "Reference": "5oHt9l70c0CguI0D5bQfwQ/44x--p1GsUiMMqEi16oE5Q",
+  "ParentRef": "5oHt9l70c0CguI0D5bQfwQ/BNcJfHg8YkqeT0z62p0AmQ",
+  "Name": "Weight",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Created": "2021-09-29T09:49:25.0625568Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=21.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2021-09-29T09:49:25.0625568Z"
+}
