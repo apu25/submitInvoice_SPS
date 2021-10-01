@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Read_csv_and_open_url" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="816.8,1812.8" sap2010:WorkflowViewState.IdRef="Read_csv_and_open_url_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Read_csv_and_open_url" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="690.4,2624.8" sap2010:WorkflowViewState.IdRef="Read_csv_and_open_url_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="41">
       <x:String>System.Activities</x:String>
@@ -80,7 +80,7 @@
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Submit Invoice" sap:VirtualizedContainerService.HintSize="513.6,1748" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Submit Invoice" sap:VirtualizedContainerService.HintSize="590.4,2560" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="url_current_PO" />
       <Variable x:TypeArguments="x:String" Name="Fullpath_file_fixed_fields" />
@@ -102,14 +102,14 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Assign variables" sap:VirtualizedContainerService.HintSize="472,512" sap2010:WorkflowViewState.IdRef="Sequence_20">
+    <Sequence DisplayName="Assign variables" sap:VirtualizedContainerService.HintSize="548.8,855.2" sap2010:WorkflowViewState.IdRef="Sequence_20">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:MultipleAssign DisplayName="Assign source files" sap:VirtualizedContainerService.HintSize="430.4,132" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+      <ui:MultipleAssign DisplayName="Assign source files W drive 1-2" sap:VirtualizedContainerService.HintSize="507.2,132" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
         <ui:MultipleAssign.AssignOperations>
           <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
             <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
@@ -117,7 +117,7 @@
                 <OutArgument x:TypeArguments="x:String">[Fullpath_file_fixed_fields]</OutArgument>
               </ui:AssignOperation.To>
               <ui:AssignOperation.Value>
-                <InArgument x:TypeArguments="x:String">C:\SPS submit Invoice\__Automation\Config\Config_fixed_fields_in_invoice_page.csv</InArgument>
+                <InArgument x:TypeArguments="x:String">W:\OM Files\SPS_ASN_Invoice\SPS submit Invoice\__Automation\Config\Config_fixed_fields_in_invoice_page.csv</InArgument>
               </ui:AssignOperation.Value>
             </ui:AssignOperation>
             <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
@@ -125,7 +125,7 @@
                 <OutArgument x:TypeArguments="x:String">[Fullpath_file_invoie_info]</OutArgument>
               </ui:AssignOperation.To>
               <ui:AssignOperation.Value>
-                <InArgument x:TypeArguments="x:String">C:\SPS submit Invoice\Invoice_info\Invoice_info_3.csv</InArgument>
+                <InArgument x:TypeArguments="x:String">W:\OM Files\SPS_ASN_Invoice\SPS submit Invoice\Invoice_info\Invoice_info_2.csv</InArgument>
               </ui:AssignOperation.Value>
             </ui:AssignOperation>
           </scg:List>
@@ -137,7 +137,46 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:MultipleAssign>
-      <ui:ReadCsvFile Encoding="{x:Null}" DataTable="[DT_fixes_fields]" Delimitator="Comma" DisplayName="Read CSV fixed fields" FilePath="[Fullpath_file_fixed_fields]" sap:VirtualizedContainerService.HintSize="430.4,22.4" sap2010:WorkflowViewState.IdRef="ReadCsvFile_1">
+      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="507.2,303.2" sap2010:WorkflowViewState.IdRef="CommentOut_9">
+        <ui:CommentOut.Body>
+          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="472,224.8" sap2010:WorkflowViewState.IdRef="Sequence_22">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:MultipleAssign DisplayName="Assign source files local drive 3-4" sap:VirtualizedContainerService.HintSize="430.4,132" sap2010:WorkflowViewState.IdRef="MultipleAssign_4">
+              <ui:MultipleAssign.AssignOperations>
+                <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_24">
+                    <ui:AssignOperation.To>
+                      <OutArgument x:TypeArguments="x:String">[Fullpath_file_fixed_fields]</OutArgument>
+                    </ui:AssignOperation.To>
+                    <ui:AssignOperation.Value>
+                      <InArgument x:TypeArguments="x:String">C:\SPS submit Invoice\__Automation\Config\Config_fixed_fields_in_invoice_page.csv</InArgument>
+                    </ui:AssignOperation.Value>
+                  </ui:AssignOperation>
+                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_25">
+                    <ui:AssignOperation.To>
+                      <OutArgument x:TypeArguments="x:String">[Fullpath_file_invoie_info]</OutArgument>
+                    </ui:AssignOperation.To>
+                    <ui:AssignOperation.Value>
+                      <InArgument x:TypeArguments="x:String">C:\SPS submit Invoice\Invoice_info\Invoice_info_3.csv</InArgument>
+                    </ui:AssignOperation.Value>
+                  </ui:AssignOperation>
+                </scg:List>
+              </ui:MultipleAssign.AssignOperations>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:MultipleAssign>
+          </Sequence>
+        </ui:CommentOut.Body>
+      </ui:CommentOut>
+      <ui:ReadCsvFile Encoding="{x:Null}" DataTable="[DT_fixes_fields]" Delimitator="Comma" DisplayName="Read CSV fixed fields" FilePath="[Fullpath_file_fixed_fields]" sap:VirtualizedContainerService.HintSize="507.2,22.4" sap2010:WorkflowViewState.IdRef="ReadCsvFile_1">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -145,7 +184,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:ReadCsvFile>
-      <ui:ReadCsvFile Encoding="{x:Null}" DataTable="[DT_invoice_info]" Delimitator="Comma" DisplayName="Read CSV invoice info" FilePath="[Fullpath_file_invoie_info]" sap:VirtualizedContainerService.HintSize="430.4,22.4" sap2010:WorkflowViewState.IdRef="ReadCsvFile_2">
+      <ui:ReadCsvFile Encoding="{x:Null}" DataTable="[DT_invoice_info]" Delimitator="Comma" DisplayName="Read CSV invoice info" FilePath="[Fullpath_file_invoie_info]" sap:VirtualizedContainerService.HintSize="507.2,22.4" sap2010:WorkflowViewState.IdRef="ReadCsvFile_2">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -153,7 +192,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:ReadCsvFile>
-      <ui:MultipleAssign DisplayName="Assign fixed content each PO" sap:VirtualizedContainerService.HintSize="430.4,22.4" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
+      <ui:MultipleAssign DisplayName="Assign fixed content each PO" sap:VirtualizedContainerService.HintSize="507.2,22.4" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
         <ui:MultipleAssign.AssignOperations>
           <scg:List x:TypeArguments="ui:AssignOperation" Capacity="16">
             <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
@@ -237,7 +276,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:MultipleAssign>
-      <Assign sap:VirtualizedContainerService.HintSize="430.4,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign sap:VirtualizedContainerService.HintSize="507.2,60" sap2010:WorkflowViewState.IdRef="Assign_1">
         <Assign.To>
           <OutArgument x:TypeArguments="x:String">[url_current_PO]</OutArgument>
         </Assign.To>
@@ -246,13 +285,13 @@
         </Assign.Value>
       </Assign>
     </Sequence>
-    <uix:NApplicationCard AttachMode="SingleWindow" CloseMode="Never" DisplayName="Submit invoice in SPS" sap:VirtualizedContainerService.HintSize="472,1103.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" ScopeGuid="61976831-887a-4398-bff5-65afbb12ea7c" Version="V1" WindowResize="Maximize">
+    <uix:NApplicationCard AttachMode="SingleWindow" CloseMode="Never" DisplayName="Submit invoice in SPS" sap:VirtualizedContainerService.HintSize="548.8,1572" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" ScopeGuid="61976831-887a-4398-bff5-65afbb12ea7c" Version="V1" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="316.8,886.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="358.4,1355.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="SPS_internal_ID" />
               <Variable x:TypeArguments="x:String" Name="Invoice_Number" />
@@ -271,7 +310,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NCheckState Exists="{x:Null}" DisplayName="Check App State 'DEV CENTER'" sap:VirtualizedContainerService.HintSize="275.2,22.4" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="61976831-887a-4398-bff5-65afbb12ea7c" Timeout="2" Version="V1">
+            <uix:NCheckState Exists="{x:Null}" DisplayName="Check App State 'DEV CENTER'" sap:VirtualizedContainerService.HintSize="316.8,22.4" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="61976831-887a-4398-bff5-65afbb12ea7c" Timeout="2" Version="V1">
               <uix:NCheckState.IfExists>
                 <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="249.6,116.8" sap2010:WorkflowViewState.IdRef="Sequence_11">
                   <sap:WorkflowViewStateService.ViewState>
@@ -383,13 +422,13 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NCheckState>
-            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" ColumnCount="1" DataTable="[DT_invoice_info]" DisplayName="Loop Each PO in DT_invoice_info" sap:VirtualizedContainerService.HintSize="275.2,729.6" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" ColumnCount="1" DataTable="[DT_invoice_info]" DisplayName="Loop Each PO in DT_invoice_info" sap:VirtualizedContainerService.HintSize="316.8,1198.4" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
               <ui:ForEachRow.Body>
                 <ActivityAction x:TypeArguments="sd:DataRow">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="241.6,553.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="283.2,1022.4" sap2010:WorkflowViewState.IdRef="Sequence_3">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="x:String" Name="Allowance_or_Charge_Amount" />
                       <Variable x:TypeArguments="x:String" Name="Allowance_or_Charge_Amount_3" />
@@ -399,7 +438,7 @@
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:MultipleAssign DisplayName="Assign Inv info each PO" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="MultipleAssign_3">
+                    <ui:MultipleAssign DisplayName="Assign Inv info each PO" sap:VirtualizedContainerService.HintSize="241.6,22.4" sap2010:WorkflowViewState.IdRef="MultipleAssign_3">
                       <ui:MultipleAssign.AssignOperations>
                         <scg:List x:TypeArguments="ui:AssignOperation" Capacity="16">
                           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_13">
@@ -499,7 +538,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:MultipleAssign>
-                    <Sequence DisplayName="PO page in SPS" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                    <Sequence DisplayName="PO page in SPS" sap:VirtualizedContainerService.HintSize="241.6,22.4" sap2010:WorkflowViewState.IdRef="Sequence_19">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -550,8 +589,8 @@
                         </sap:WorkflowViewStateService.ViewState>
                       </uix:NClick>
                     </Sequence>
-                    <Delay DisplayName="Delay 10 seconds" Duration="00:00:10" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="Delay_2" />
-                    <Sequence DisplayName="Quick Entry" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                    <Delay DisplayName="Delay 10 seconds" Duration="00:00:10" sap:VirtualizedContainerService.HintSize="241.6,22.4" sap2010:WorkflowViewState.IdRef="Delay_2" />
+                    <Sequence DisplayName="Quick Entry" sap:VirtualizedContainerService.HintSize="241.6,22.4" sap2010:WorkflowViewState.IdRef="Sequence_18">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -899,11 +938,11 @@
                         </sap:WorkflowViewStateService.ViewState>
                       </uix:NClick>
                     </Sequence>
-                    <Delay DisplayName="Delay 10 seconds" Duration="00:00:10" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="Delay_5" />
-                    <Sequence DisplayName="Full Entry" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                    <Delay DisplayName="Delay 10 seconds" Duration="00:00:10" sap:VirtualizedContainerService.HintSize="241.6,22.4" sap2010:WorkflowViewState.IdRef="Delay_5" />
+                    <Sequence DisplayName="Full Entry" sap:VirtualizedContainerService.HintSize="241.6,491.2" sap2010:WorkflowViewState.IdRef="Sequence_16">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
@@ -924,7 +963,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </uix:NClick>
-                      <Delay DisplayName="Delay 1 second" Duration="00:00:01" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="Delay_6" />
+                      <Delay DisplayName="Delay 1 second" Duration="00:00:02" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="Delay_6" />
                       <uix:NClick ClickType="Single" DisplayName="Click 'Edit in Full Form'" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="61976831-887a-4398-bff5-65afbb12ea7c" Version="V1">
                         <uix:NClick.Target>
                           <uix:TargetAnchorable BrowserURL="https://cdn.prod.spsc.io/web/fulfillment/ui/fulfillment-ui-v2/de286f426eaba4260ba94340465d75f9eed36152/index.html?access_token=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1qaEJORVF3TkRaQk56ZENORFV3TmpjeVJUSkZOMFU1TTBZMk5EYzRPVFUyUVRjMlFUSkVOZyJ9.eyJodHRwOi8vc3BzL2VudiI6InByb2QiLCJodHRwOi8vc3BzL2lzLXRyaWFsIjpmYWxzZSwiaHR0cDovL3Nwcy9vcmctaWQiOiIxOTI4MTg3NjU3MTcwNzk4MDE5ODI4NTkwNDYzMzQ4NTkxMjc1MCIsImh0dHA6Ly9zcHMvb3JnLW5hbWUiOiJFdGVrY2l0eSBDb3Jwb3JhdGlvbiIsImh0dHA6Ly9zcHMvb3duZXItb3JnLWlkIjoiMTU3NjI3MTQxOTc5NjEyOTE1NjI2MzMzNTc3MTA1MTExODU0MjMyIiwiaHR0cDovL3Nwcy90ZXN0Ijoibm8iLCJodHRwOi8vc3BzL3VzZXItaWQiOiIyMjU2OTQ1ODUyNzI0MDU5NDUwODkyNDIzMzY1OTQwNjc3OTEwNDciLCJpc3MiOiJodHRwczovL2F1dGguc3BzY29tbWVyY2UuY29tLyIsInN1YiI6ImF1dGgwfDIyNTY5NDU4NTI3MjQwNTk0NTA4OTI0MjMzNjU5NDA2Nzc5MTA0NyIsImF1ZCI6WyJhcGk6Ly9hcGkuc3BzY29tbWVyY2UuY29tLyIsImh0dHBzOi8vc3BzY29tbWVyY2UuYXV0aDAuY29tL3VzZXJpbmZvIl0sImlhdCI6MTYzMjk2NDQ2MiwiZXhwIjoxNjMzMDA3NjYyLCJhenAiOiJYZ1ZpWmV2VE1ORklpb1VsZjhWeUNXQURpc2oxYzZ4TiIsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwifQ.tUCGefO_4VnrbW4Bf1pLmfFfbN1Y7eCr1s4hdMu-52ckVFoewrGCVIfXqvJ2IYBssvR7OqOWD1bsX7YW5PkfzuecddM-KmD_Mrrj1XtUkdjwDOU8LhyFzagMsR8f4CRQkeoN0bn89-D_2k6CdQj-FleF5OwvroQ_w2hamiPb-ea1XOcob8uB0lMk_oxsizvRkK-8umaAHiKrvP-jcq3nfA6fOoxzS2HpCE6-c9u4GyFxRqj9yx9Mp29AnkhK7aRYXy9eY4iEb4ihFncJ_ljHmk0KS5p9mS0u-PPttQAK_fGSJ12F1sUKckoCoMVEom37v8uojgXBjT5r37yoHzwg-g&amp;lang=en-US#/transactions/batchProcess/" DesignTimeRectangle="1558, 596, 102, 19" ElementType="Text" FriendlyName="'Edit in Full Form'" FullSelectorArgument="&lt;webctrl name='app-fulfillment-rtlic8' tag='IFRAME' /&gt;&lt;webctrl aaname='Edit in Full Form' parentid='getFullFormButton' tag='SPAN' /&gt;" FuzzyAccuracy="0.79" FuzzySelectorArgument="&lt;webctrl tag='IFRAME' /&gt;&lt;webctrl aaname='Edit in Full Form' parentid='getFullFormButton' tag='SPAN' type='' check:text='Edit in Full Form' /&gt;" Guid="0e0a5841-a7a9-4bb4-876d-7c685a8135d5" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGoAAAAXCAYAAADjndqIAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAHQSURBVGhD7ZZNroMgEMffUbt28dZum/QC7ky8RjdNz2BiL9H2FjwYQMcBVFp4SjL/xMVYma8fDP0RrCLEoAoRgypEDKoQMahCxKAKEYMqRN+Bet1FXV3E9aXN5+0iTlUnem2u6C2u519xah/G/j9Bnue7eAbsI2oGqm9l4yr6LDSegNLrt4J6iEb5/xBUdK5IMaC+iZNSLqiYxhFQjoYu24mJzhUpGtQOp54qKyhoAINKokhQ5l4xI6BuO/eOMgWDLzwuHL/aV317G1uNQuXLjER4wptgKVd3g2ifzaCtlKBgbSBfm8f4jfKjpoyM1eN14H+57tU7yhY3QqIFBkCNdrBIHygVc5r/kM8HDXTj5gEF6/B9pSDQfsi4U41S8A16B1PJUzeJuf1E+cYceedtQMhfANS0MaTM7gs2EAqcnhmIlKC8cWj+WriHXr8ACv8Z0X5w3b5120E5AaT2BhXw7cbNcaI8+UphX16/2UEd8UTtCuqoJ8o4xL/D92ugAg3ICYo2Q+eZGpRZh5sOccP9ACUDJQuaP/gU6Wba35pB2UuJoe+dRmQEZTfVmCdpBkwCFJvaSMtxLCwbC/cqIyjWccWgChGDKkQMqhAxqCIkxB/JLhFMApOlpQAAAABJRU5ErkJggg==" InformativeScreenshot="068a0e0941295e511a0a607abba30f0d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='sps-commerce-platform' title='Fulfillment : SPS Commerce' /&gt;" SearchSteps="Selector, FuzzySelector, Image">
@@ -1023,8 +1062,8 @@
                         </sap:WorkflowViewStateService.ViewState>
                       </uix:NClick>
                     </Sequence>
-                    <Delay DisplayName="Delay 9 seconds" Duration="00:00:09" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="Delay_3" />
-                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="CommentOut_8">
+                    <Delay DisplayName="Delay 9 seconds" Duration="00:00:09" sap:VirtualizedContainerService.HintSize="241.6,22.4" sap2010:WorkflowViewState.IdRef="Delay_3" />
+                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="241.6,22.4" sap2010:WorkflowViewState.IdRef="CommentOut_8">
                       <ui:CommentOut.Body>
                         <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="375.2,227.2" sap2010:WorkflowViewState.IdRef="Sequence_21">
                           <sap:WorkflowViewStateService.ViewState>
