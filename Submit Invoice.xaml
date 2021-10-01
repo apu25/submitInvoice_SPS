@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Read_csv_and_open_url" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="690.4,3904.8" sap2010:WorkflowViewState.IdRef="Read_csv_and_open_url_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Read_csv_and_open_url" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="690.4,4040" sap2010:WorkflowViewState.IdRef="Read_csv_and_open_url_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="41">
       <x:String>System.Activities</x:String>
@@ -81,7 +81,7 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Submit Invoice" sap:VirtualizedContainerService.HintSize="668.8,3840" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Submit Invoice" sap:VirtualizedContainerService.HintSize="668.8,3975.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="url_current_PO" />
       <Variable x:TypeArguments="x:String" Name="Fullpath_file_fixed_fields" />
@@ -110,59 +110,31 @@
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:MultipleAssign DisplayName="Assign source files W drive 1-2" sap:VirtualizedContainerService.HintSize="507.2,132" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
-        <ui:MultipleAssign.AssignOperations>
-          <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
-            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
-              <ui:AssignOperation.To>
-                <OutArgument x:TypeArguments="x:String">[Fullpath_file_fixed_fields]</OutArgument>
-              </ui:AssignOperation.To>
-              <ui:AssignOperation.Value>
-                <InArgument x:TypeArguments="x:String">W:\OM Files\SPS_ASN_Invoice\SPS submit Invoice\__Automation\Config\Config_fixed_fields_in_invoice_page.csv</InArgument>
-              </ui:AssignOperation.Value>
-            </ui:AssignOperation>
-            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
-              <ui:AssignOperation.To>
-                <OutArgument x:TypeArguments="x:String">[Fullpath_file_invoie_info]</OutArgument>
-              </ui:AssignOperation.To>
-              <ui:AssignOperation.Value>
-                <InArgument x:TypeArguments="x:String">W:\OM Files\SPS_ASN_Invoice\SPS submit Invoice\Invoice_info\Invoice_info_2.csv</InArgument>
-              </ui:AssignOperation.Value>
-            </ui:AssignOperation>
-          </scg:List>
-        </ui:MultipleAssign.AssignOperations>
-        <sap:WorkflowViewStateService.ViewState>
-          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-            <x:Boolean x:Key="IsPinned">False</x:Boolean>
-          </scg:Dictionary>
-        </sap:WorkflowViewStateService.ViewState>
-      </ui:MultipleAssign>
-      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="507.2,303.2" sap2010:WorkflowViewState.IdRef="CommentOut_9">
+      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="507.2,303.2" sap2010:WorkflowViewState.IdRef="CommentOut_10">
         <ui:CommentOut.Body>
-          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="472,224.8" sap2010:WorkflowViewState.IdRef="Sequence_22">
+          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="472,224.8" sap2010:WorkflowViewState.IdRef="Sequence_23">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:MultipleAssign DisplayName="Assign source files local drive 3-4" sap:VirtualizedContainerService.HintSize="430.4,132" sap2010:WorkflowViewState.IdRef="MultipleAssign_4">
+            <ui:MultipleAssign DisplayName="Assign source files W drive 1-2" sap:VirtualizedContainerService.HintSize="430.4,132" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
               <ui:MultipleAssign.AssignOperations>
                 <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
-                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_24">
+                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
                     <ui:AssignOperation.To>
                       <OutArgument x:TypeArguments="x:String">[Fullpath_file_fixed_fields]</OutArgument>
                     </ui:AssignOperation.To>
                     <ui:AssignOperation.Value>
-                      <InArgument x:TypeArguments="x:String">C:\SPS submit Invoice\__Automation\Config\Config_fixed_fields_in_invoice_page.csv</InArgument>
+                      <InArgument x:TypeArguments="x:String">W:\OM Files\SPS_ASN_Invoice\SPS submit Invoice\__Automation\Config\Config_fixed_fields_in_invoice_page.csv</InArgument>
                     </ui:AssignOperation.Value>
                   </ui:AssignOperation>
-                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_25">
+                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
                     <ui:AssignOperation.To>
                       <OutArgument x:TypeArguments="x:String">[Fullpath_file_invoie_info]</OutArgument>
                     </ui:AssignOperation.To>
                     <ui:AssignOperation.Value>
-                      <InArgument x:TypeArguments="x:String">C:\SPS submit Invoice\Invoice_info\Invoice_info_3.csv</InArgument>
+                      <InArgument x:TypeArguments="x:String">W:\OM Files\SPS_ASN_Invoice\SPS submit Invoice\Invoice_info\Invoice_info_2.csv</InArgument>
                     </ui:AssignOperation.Value>
                   </ui:AssignOperation>
                 </scg:List>
@@ -177,6 +149,34 @@
           </Sequence>
         </ui:CommentOut.Body>
       </ui:CommentOut>
+      <ui:MultipleAssign DisplayName="Assign source files local drive 3-4" sap:VirtualizedContainerService.HintSize="507.2,132" sap2010:WorkflowViewState.IdRef="MultipleAssign_4">
+        <ui:MultipleAssign.AssignOperations>
+          <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_24">
+              <ui:AssignOperation.To>
+                <OutArgument x:TypeArguments="x:String">[Fullpath_file_fixed_fields]</OutArgument>
+              </ui:AssignOperation.To>
+              <ui:AssignOperation.Value>
+                <InArgument x:TypeArguments="x:String">C:\SPS submit Invoice\__Automation\Config\Config_fixed_fields_in_invoice_page.csv</InArgument>
+              </ui:AssignOperation.Value>
+            </ui:AssignOperation>
+            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_25">
+              <ui:AssignOperation.To>
+                <OutArgument x:TypeArguments="x:String">[Fullpath_file_invoie_info]</OutArgument>
+              </ui:AssignOperation.To>
+              <ui:AssignOperation.Value>
+                <InArgument x:TypeArguments="x:String">C:\SPS submit Invoice\Invoice_info\Invoice_info_4.csv</InArgument>
+              </ui:AssignOperation.Value>
+            </ui:AssignOperation>
+          </scg:List>
+        </ui:MultipleAssign.AssignOperations>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:MultipleAssign>
       <ui:ReadCsvFile Encoding="{x:Null}" DataTable="[DT_fixes_fields]" Delimitator="Comma" DisplayName="Read CSV fixed fields" FilePath="[Fullpath_file_fixed_fields]" sap:VirtualizedContainerService.HintSize="507.2,22.4" sap2010:WorkflowViewState.IdRef="ReadCsvFile_1">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -286,13 +286,13 @@
         </Assign.Value>
       </Assign>
     </Sequence>
-    <uix:NApplicationCard AttachMode="SingleWindow" CloseMode="Never" DisplayName="Submit invoice in SPS" sap:VirtualizedContainerService.HintSize="627.2,2852" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" ScopeGuid="61976831-887a-4398-bff5-65afbb12ea7c" Version="V1" WindowResize="Maximize">
+    <uix:NApplicationCard AttachMode="SingleWindow" CloseMode="Never" DisplayName="Submit invoice in SPS" sap:VirtualizedContainerService.HintSize="627.2,2987.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" ScopeGuid="61976831-887a-4398-bff5-65afbb12ea7c" Version="V1" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="593.6,2635.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="593.6,2770.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="SPS_internal_ID" />
               <Variable x:TypeArguments="x:String" Name="Invoice_Number" />
@@ -423,13 +423,13 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NCheckState>
-            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" ColumnCount="1" DataTable="[DT_invoice_info]" DisplayName="Loop Each PO in DT_invoice_info" sap:VirtualizedContainerService.HintSize="552,2478.4" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" ColumnCount="1" DataTable="[DT_invoice_info]" DisplayName="Loop Each PO in DT_invoice_info" sap:VirtualizedContainerService.HintSize="552,2613.6" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
               <ui:ForEachRow.Body>
                 <ActivityAction x:TypeArguments="sd:DataRow">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="518.4,2302.4" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="518.4,2437.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="x:String" Name="Allowance_or_Charge_Amount" />
                       <Variable x:TypeArguments="x:String" Name="Allowance_or_Charge_Amount_3" />
@@ -940,14 +940,14 @@
                       </uix:NClick>
                     </Sequence>
                     <Delay DisplayName="Delay 10 seconds" Duration="00:00:10" sap:VirtualizedContainerService.HintSize="476.8,22.4" sap2010:WorkflowViewState.IdRef="Delay_5" />
-                    <Sequence DisplayName="Full Entry" sap:VirtualizedContainerService.HintSize="476.8,491.2" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                    <Sequence DisplayName="Full Entry" sap:VirtualizedContainerService.HintSize="476.8,626.4" sap2010:WorkflowViewState.IdRef="Sequence_16">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <uix:NClick ClickType="Single" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="61976831-887a-4398-bff5-65afbb12ea7c" Version="V1">
+                      <uix:NClick ClickType="Single" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="333.6,22.4" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="61976831-887a-4398-bff5-65afbb12ea7c" Version="V1">
                         <uix:NClick.Target>
                           <uix:TargetAnchorable BrowserURL="https://cdn.prod.spsc.io/web/fulfillment/ui/fulfillment-ui-v2/de286f426eaba4260ba94340465d75f9eed36152/index.html?access_token=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1qaEJORVF3TkRaQk56ZENORFV3TmpjeVJUSkZOMFU1TTBZMk5EYzRPVFUyUVRjMlFUSkVOZyJ9.eyJodHRwOi8vc3BzL2VudiI6InByb2QiLCJodHRwOi8vc3BzL2lzLXRyaWFsIjpmYWxzZSwiaHR0cDovL3Nwcy9vcmctaWQiOiIxOTI4MTg3NjU3MTcwNzk4MDE5ODI4NTkwNDYzMzQ4NTkxMjc1MCIsImh0dHA6Ly9zcHMvb3JnLW5hbWUiOiJFdGVrY2l0eSBDb3Jwb3JhdGlvbiIsImh0dHA6Ly9zcHMvb3duZXItb3JnLWlkIjoiMTU3NjI3MTQxOTc5NjEyOTE1NjI2MzMzNTc3MTA1MTExODU0MjMyIiwiaHR0cDovL3Nwcy90ZXN0Ijoibm8iLCJodHRwOi8vc3BzL3VzZXItaWQiOiIyMjU2OTQ1ODUyNzI0MDU5NDUwODkyNDIzMzY1OTQwNjc3OTEwNDciLCJpc3MiOiJodHRwczovL2F1dGguc3BzY29tbWVyY2UuY29tLyIsInN1YiI6ImF1dGgwfDIyNTY5NDU4NTI3MjQwNTk0NTA4OTI0MjMzNjU5NDA2Nzc5MTA0NyIsImF1ZCI6WyJhcGk6Ly9hcGkuc3BzY29tbWVyY2UuY29tLyIsImh0dHBzOi8vc3BzY29tbWVyY2UuYXV0aDAuY29tL3VzZXJpbmZvIl0sImlhdCI6MTYzMjk2NDQ2MiwiZXhwIjoxNjMzMDA3NjYyLCJhenAiOiJYZ1ZpWmV2VE1ORklpb1VsZjhWeUNXQURpc2oxYzZ4TiIsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwifQ.tUCGefO_4VnrbW4Bf1pLmfFfbN1Y7eCr1s4hdMu-52ckVFoewrGCVIfXqvJ2IYBssvR7OqOWD1bsX7YW5PkfzuecddM-KmD_Mrrj1XtUkdjwDOU8LhyFzagMsR8f4CRQkeoN0bn89-D_2k6CdQj-FleF5OwvroQ_w2hamiPb-ea1XOcob8uB0lMk_oxsizvRkK-8umaAHiKrvP-jcq3nfA6fOoxzS2HpCE6-c9u4GyFxRqj9yx9Mp29AnkhK7aRYXy9eY4iEb4ihFncJ_ljHmk0KS5p9mS0u-PPttQAK_fGSJ12F1sUKckoCoMVEom37v8uojgXBjT5r37yoHzwg-g&amp;lang=en-US#/transactions/batchProcess/" DesignTimeRectangle="1621, 436, 54, 39" ElementType="Button" FriendlyName="'BUTTON'" FullSelectorArgument="&lt;webctrl tag='IFRAME' /&gt;&lt;webctrl aaname='Batch Process Actions' parentid='batch_process' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='IFRAME' /&gt;&lt;webctrl aaname='Batch Process Actions' parentid='batch_process' tag='BUTTON' type='button' /&gt;" Guid="d55ff6f9-711a-41da-bfcb-95ba7d6a0875" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADoAAAArCAYAAAApMZsWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAIMSURBVGhD7Zo9T9tQFIb5T1488Rea5U6dWMiSLJ5Y2qVemrksZcpSBpQB7/VgeUAZkqGJEJgELCUyzQfkH7ycY7DjJGegpZa47j3SI0V6z4n9+DqWrNw9/CdlRKtWG6KPqxXGcYxfl5daE43HqUuxctHFcomrmxtMkgRz+qwz0/v71OWhIJuLXo9GaYM0qCO8YKO7uxe7gigvuTSgM+yUlRGtAkZUatYZIyo164wRlZp1xohKzTpTqug06iPwuxgkUp7gqh8i6EeY7mREMsSFH6IX/ZsXi5JEEwQtBduyYKXso9Hur4WGHo5qWUbUjnA+XM/22k3s57M2VCuUL8YfUIro1P9ckMyo4VuX8wg/6tsZ8bGNAc93j/FhOyPZT/7bVrYU0cDdPtFnDk8jzGMPjpBZloPzmN6DT+tCRriheKzXUopor63Ek3W8mPIQX+3dzLJbCGj21nN2M0LRrS8d67WUIpqu2rZMjUReHkoDWrXNW9um1R4+zyZ0IYq/X8au4ywqfP9fUI4oE/n47hxAKYWG28EF3ZbrnB44HRcNypRq4kun8KBi4i7O3GY6e+Cc4OcbJZnyRN8ZRlRq1hkjKjXrjBGVmnXGiErNOmNEpWadMaJSs84Y0Xgywe/ZTBzSidlikbqIovy/PwdVgvdjZJWL8h4GqVln2CmrXJSLg6rsSilu1ODaEK1uAU8t9wPXwbXAwwAAAABJRU5ErkJggg==" InformativeScreenshot="550c775c3ebc2f66dcd5512c0af60ef9.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='sps-commerce-platform' title='Fulfillment : SPS Commerce' /&gt;" SearchSteps="Selector, FuzzySelector, Image">
                             <uix:TargetAnchorable.Anchors>
@@ -964,8 +964,8 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </uix:NClick>
-                      <Delay DisplayName="Delay 1 second" Duration="00:00:02" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="Delay_6" />
-                      <uix:NClick ClickType="Single" DisplayName="Click 'Edit in Full Form'" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="61976831-887a-4398-bff5-65afbb12ea7c" Version="V1">
+                      <Delay DisplayName="Delay 1 second" Duration="00:00:02" sap:VirtualizedContainerService.HintSize="333.6,22.4" sap2010:WorkflowViewState.IdRef="Delay_6" />
+                      <uix:NClick ClickType="Single" DisplayName="Click 'Edit in Full Form'" sap:VirtualizedContainerService.HintSize="333.6,22.4" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="61976831-887a-4398-bff5-65afbb12ea7c" Version="V1">
                         <uix:NClick.Target>
                           <uix:TargetAnchorable BrowserURL="https://cdn.prod.spsc.io/web/fulfillment/ui/fulfillment-ui-v2/de286f426eaba4260ba94340465d75f9eed36152/index.html?access_token=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1qaEJORVF3TkRaQk56ZENORFV3TmpjeVJUSkZOMFU1TTBZMk5EYzRPVFUyUVRjMlFUSkVOZyJ9.eyJodHRwOi8vc3BzL2VudiI6InByb2QiLCJodHRwOi8vc3BzL2lzLXRyaWFsIjpmYWxzZSwiaHR0cDovL3Nwcy9vcmctaWQiOiIxOTI4MTg3NjU3MTcwNzk4MDE5ODI4NTkwNDYzMzQ4NTkxMjc1MCIsImh0dHA6Ly9zcHMvb3JnLW5hbWUiOiJFdGVrY2l0eSBDb3Jwb3JhdGlvbiIsImh0dHA6Ly9zcHMvb3duZXItb3JnLWlkIjoiMTU3NjI3MTQxOTc5NjEyOTE1NjI2MzMzNTc3MTA1MTExODU0MjMyIiwiaHR0cDovL3Nwcy90ZXN0Ijoibm8iLCJodHRwOi8vc3BzL3VzZXItaWQiOiIyMjU2OTQ1ODUyNzI0MDU5NDUwODkyNDIzMzY1OTQwNjc3OTEwNDciLCJpc3MiOiJodHRwczovL2F1dGguc3BzY29tbWVyY2UuY29tLyIsInN1YiI6ImF1dGgwfDIyNTY5NDU4NTI3MjQwNTk0NTA4OTI0MjMzNjU5NDA2Nzc5MTA0NyIsImF1ZCI6WyJhcGk6Ly9hcGkuc3BzY29tbWVyY2UuY29tLyIsImh0dHBzOi8vc3BzY29tbWVyY2UuYXV0aDAuY29tL3VzZXJpbmZvIl0sImlhdCI6MTYzMjk2NDQ2MiwiZXhwIjoxNjMzMDA3NjYyLCJhenAiOiJYZ1ZpWmV2VE1ORklpb1VsZjhWeUNXQURpc2oxYzZ4TiIsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwifQ.tUCGefO_4VnrbW4Bf1pLmfFfbN1Y7eCr1s4hdMu-52ckVFoewrGCVIfXqvJ2IYBssvR7OqOWD1bsX7YW5PkfzuecddM-KmD_Mrrj1XtUkdjwDOU8LhyFzagMsR8f4CRQkeoN0bn89-D_2k6CdQj-FleF5OwvroQ_w2hamiPb-ea1XOcob8uB0lMk_oxsizvRkK-8umaAHiKrvP-jcq3nfA6fOoxzS2HpCE6-c9u4GyFxRqj9yx9Mp29AnkhK7aRYXy9eY4iEb4ihFncJ_ljHmk0KS5p9mS0u-PPttQAK_fGSJ12F1sUKckoCoMVEom37v8uojgXBjT5r37yoHzwg-g&amp;lang=en-US#/transactions/batchProcess/" DesignTimeRectangle="1558, 596, 102, 19" ElementType="Text" FriendlyName="'Edit in Full Form'" FullSelectorArgument="&lt;webctrl name='app-fulfillment-rtlic8' tag='IFRAME' /&gt;&lt;webctrl aaname='Edit in Full Form' parentid='getFullFormButton' tag='SPAN' /&gt;" FuzzyAccuracy="0.79" FuzzySelectorArgument="&lt;webctrl tag='IFRAME' /&gt;&lt;webctrl aaname='Edit in Full Form' parentid='getFullFormButton' tag='SPAN' type='' check:text='Edit in Full Form' /&gt;" Guid="0e0a5841-a7a9-4bb4-876d-7c685a8135d5" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGoAAAAXCAYAAADjndqIAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAHQSURBVGhD7ZZNroMgEMffUbt28dZum/QC7ky8RjdNz2BiL9H2FjwYQMcBVFp4SjL/xMVYma8fDP0RrCLEoAoRgypEDKoQMahCxKAKEYMqRN+Bet1FXV3E9aXN5+0iTlUnem2u6C2u519xah/G/j9Bnue7eAbsI2oGqm9l4yr6LDSegNLrt4J6iEb5/xBUdK5IMaC+iZNSLqiYxhFQjoYu24mJzhUpGtQOp54qKyhoAINKokhQ5l4xI6BuO/eOMgWDLzwuHL/aV317G1uNQuXLjER4wptgKVd3g2ifzaCtlKBgbSBfm8f4jfKjpoyM1eN14H+57tU7yhY3QqIFBkCNdrBIHygVc5r/kM8HDXTj5gEF6/B9pSDQfsi4U41S8A16B1PJUzeJuf1E+cYceedtQMhfANS0MaTM7gs2EAqcnhmIlKC8cWj+WriHXr8ACv8Z0X5w3b5120E5AaT2BhXw7cbNcaI8+UphX16/2UEd8UTtCuqoJ8o4xL/D92ugAg3ICYo2Q+eZGpRZh5sOccP9ACUDJQuaP/gU6Wba35pB2UuJoe+dRmQEZTfVmCdpBkwCFJvaSMtxLCwbC/cqIyjWccWgChGDKkQMqhAxqCIkxB/JLhFMApOlpQAAAABJRU5ErkJggg==" InformativeScreenshot="068a0e0941295e511a0a607abba30f0d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='sps-commerce-platform' title='Fulfillment : SPS Commerce' /&gt;" SearchSteps="Selector, FuzzySelector, Image">
                             <uix:TargetAnchorable.Anchors>
@@ -982,7 +982,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </uix:NClick>
-                      <uix:NClick ClickType="Single" DisplayName="Click 'Summary'" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="61976831-887a-4398-bff5-65afbb12ea7c" Version="V1">
+                      <uix:NClick ClickType="Single" DisplayName="Click 'Summary'" sap:VirtualizedContainerService.HintSize="333.6,22.4" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="61976831-887a-4398-bff5-65afbb12ea7c" Version="V1">
                         <uix:NClick.Target>
                           <uix:TargetAnchorable BrowserURL="https://cdn.prod.spsc.io/web/fulfillment/ui/fulfillment-ui-v2/de286f426eaba4260ba94340465d75f9eed36152/index.html?access_token=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1qaEJORVF3TkRaQk56ZENORFV3TmpjeVJUSkZOMFU1TTBZMk5EYzRPVFUyUVRjMlFUSkVOZyJ9.eyJodHRwOi8vc3BzL2VudiI6InByb2QiLCJodHRwOi8vc3BzL2lzLXRyaWFsIjpmYWxzZSwiaHR0cDovL3Nwcy9vcmctaWQiOiIxOTI4MTg3NjU3MTcwNzk4MDE5ODI4NTkwNDYzMzQ4NTkxMjc1MCIsImh0dHA6Ly9zcHMvb3JnLW5hbWUiOiJFdGVrY2l0eSBDb3Jwb3JhdGlvbiIsImh0dHA6Ly9zcHMvb3duZXItb3JnLWlkIjoiMTU3NjI3MTQxOTc5NjEyOTE1NjI2MzMzNTc3MTA1MTExODU0MjMyIiwiaHR0cDovL3Nwcy90ZXN0Ijoibm8iLCJodHRwOi8vc3BzL3VzZXItaWQiOiIyMjU2OTQ1ODUyNzI0MDU5NDUwODkyNDIzMzY1OTQwNjc3OTEwNDciLCJpc3MiOiJodHRwczovL2F1dGguc3BzY29tbWVyY2UuY29tLyIsInN1YiI6ImF1dGgwfDIyNTY5NDU4NTI3MjQwNTk0NTA4OTI0MjMzNjU5NDA2Nzc5MTA0NyIsImF1ZCI6WyJhcGk6Ly9hcGkuc3BzY29tbWVyY2UuY29tLyIsImh0dHBzOi8vc3BzY29tbWVyY2UuYXV0aDAuY29tL3VzZXJpbmZvIl0sImlhdCI6MTYzMjk2NDQ2MiwiZXhwIjoxNjMzMDA3NjYyLCJhenAiOiJYZ1ZpWmV2VE1ORklpb1VsZjhWeUNXQURpc2oxYzZ4TiIsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwifQ.tUCGefO_4VnrbW4Bf1pLmfFfbN1Y7eCr1s4hdMu-52ckVFoewrGCVIfXqvJ2IYBssvR7OqOWD1bsX7YW5PkfzuecddM-KmD_Mrrj1XtUkdjwDOU8LhyFzagMsR8f4CRQkeoN0bn89-D_2k6CdQj-FleF5OwvroQ_w2hamiPb-ea1XOcob8uB0lMk_oxsizvRkK-8umaAHiKrvP-jcq3nfA6fOoxzS2HpCE6-c9u4GyFxRqj9yx9Mp29AnkhK7aRYXy9eY4iEb4ihFncJ_ljHmk0KS5p9mS0u-PPttQAK_fGSJ12F1sUKckoCoMVEom37v8uojgXBjT5r37yoHzwg-g&amp;lang=en-US#/transactions/batchProcess/" DesignTimeRectangle="340, 482, 113, 49" ElementType="Text" FriendlyName="'Summary'" FullSelectorArgument="&lt;webctrl tag='IFRAME' /&gt;&lt;webctrl aria-role='tab' id='invoice_summary_TAB' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='IFRAME' /&gt;&lt;webctrl aria-role='tab' id='invoice_summary_TAB' tag='A' type='' aaname=' Summary  ' check:text='Summary' /&gt;" Guid="e5c4d83a-2f99-49c7-9188-f84b1137e76c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHUAAAA1CAYAAAB/XKTQAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAIOSURBVHhe7ZZNbsIwEEY5ZLdIPQTsWHbHJptyiIhNbhCJBTeIisoFqvYObmJ78DgEGrXpBH36Fk8i8WT88+zBi4/PL0ewoFRAKBUQSgWEUgGhVEAoFRBKBYRSAaFUQCgVEEoFhFIBoVRAKBUQSgWEUgGhVEAoFRBKBYRSAaFUQCgVEEoFhFIBmUFq4/abZ/e0TKyqZiCO/BZjqVHopnSNvDuVbrVcu/1Jx5G/YCvVC2yl7urhdjIJxie1dkUsucVxoH1A+mHXxaeT3FTrcNKP21TC/clPuXW89Fkc87Lf9e9zyTfZRtO5Ury0X4/hxb363HnFkfyDc/1H7P9TtYz+hMdK1TGXfBIThVxKvAiSdiU35ugvvn8eMwah6yuOPd0PYj/ZZrFhhotSICyUWpTu/Wip6Vm+uVrM5dYd/HOUepVT2lvixrh1YRuUrsfg6d0X4risT2nHbFID6dT4yT+SVBmL4r7U/H34rfowZGapLXpBH0Rq6EPljO0/SZW+VlUdxqD6tMRWahSgS1IuLQrol2Njqf328DxGaorV8daYSj1UpdurSQfU4rbIKfF0cv2C20pNmylQtOPWm/Ge1Mu3sjFnYP7yC4eUYNlk9lDqxIRTnFcfayh1KmIJv1mWDaFUQCgVEEoFhFIBoVRAKBUQSgWEUgGhVEAoFRBKBYRSAaFUQCgVkMXb+9kRJM7uG3uvXA7SlxUKAAAAAElFTkSuQmCC" InformativeScreenshot="71fa56ae7526679363f4069a110367d3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='sps-commerce-platform' title='Fulfillment : SPS Commerce' /&gt;" SearchSteps="Selector, FuzzySelector, Image">
                             <uix:TargetAnchorable.Anchors>
@@ -999,7 +999,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </uix:NClick>
-                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Double" DeselectAfter="True" DisplayName="Type Into 'Trade Discount'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="NTypeInto_19" InteractionMode="HardwareEvents" ScopeIdentifier="61976831-887a-4398-bff5-65afbb12ea7c" Text="[Allowance_or_Charge_Amount_3]" Version="V1">
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Double" DeselectAfter="True" DisplayName="Type Into 'Trade Discount'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="333.6,22.4" sap2010:WorkflowViewState.IdRef="NTypeInto_19" InteractionMode="HardwareEvents" ScopeIdentifier="61976831-887a-4398-bff5-65afbb12ea7c" Text="[Allowance_or_Charge_Amount_3]" Version="V1">
                         <uix:NTypeInto.Target>
                           <uix:TargetAnchorable BrowserURL="https://cdn.prod.spsc.io/web/fulfillment/ui/fulfillment-ui-v2/de286f426eaba4260ba94340465d75f9eed36152/index.html?access_token=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1qaEJORVF3TkRaQk56ZENORFV3TmpjeVJUSkZOMFU1TTBZMk5EYzRPVFUyUVRjMlFUSkVOZyJ9.eyJodHRwOi8vc3BzL2VudiI6InByb2QiLCJodHRwOi8vc3BzL2lzLXRyaWFsIjpmYWxzZSwiaHR0cDovL3Nwcy9vcmctaWQiOiIxOTI4MTg3NjU3MTcwNzk4MDE5ODI4NTkwNDYzMzQ4NTkxMjc1MCIsImh0dHA6Ly9zcHMvb3JnLW5hbWUiOiJFdGVrY2l0eSBDb3Jwb3JhdGlvbiIsImh0dHA6Ly9zcHMvb3duZXItb3JnLWlkIjoiMTU3NjI3MTQxOTc5NjEyOTE1NjI2MzMzNTc3MTA1MTExODU0MjMyIiwiaHR0cDovL3Nwcy90ZXN0Ijoibm8iLCJodHRwOi8vc3BzL3VzZXItaWQiOiIyMjU2OTQ1ODUyNzI0MDU5NDUwODkyNDIzMzY1OTQwNjc3OTEwNDciLCJpc3MiOiJodHRwczovL2F1dGguc3BzY29tbWVyY2UuY29tLyIsInN1YiI6ImF1dGgwfDIyNTY5NDU4NTI3MjQwNTk0NTA4OTI0MjMzNjU5NDA2Nzc5MTA0NyIsImF1ZCI6WyJhcGk6Ly9hcGkuc3BzY29tbWVyY2UuY29tLyIsImh0dHBzOi8vc3BzY29tbWVyY2UuYXV0aDAuY29tL3VzZXJpbmZvIl0sImlhdCI6MTYzMjk2NDQ2MiwiZXhwIjoxNjMzMDA3NjYyLCJhenAiOiJYZ1ZpWmV2VE1ORklpb1VsZjhWeUNXQURpc2oxYzZ4TiIsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwifQ.tUCGefO_4VnrbW4Bf1pLmfFfbN1Y7eCr1s4hdMu-52ckVFoewrGCVIfXqvJ2IYBssvR7OqOWD1bsX7YW5PkfzuecddM-KmD_Mrrj1XtUkdjwDOU8LhyFzagMsR8f4CRQkeoN0bn89-D_2k6CdQj-FleF5OwvroQ_w2hamiPb-ea1XOcob8uB0lMk_oxsizvRkK-8umaAHiKrvP-jcq3nfA6fOoxzS2HpCE6-c9u4GyFxRqj9yx9Mp29AnkhK7aRYXy9eY4iEb4ihFncJ_ljHmk0KS5p9mS0u-PPttQAK_fGSJ12F1sUKckoCoMVEom37v8uojgXBjT5r37yoHzwg-g&amp;lang=en-US#/transactions/batchProcess/" DesignTimeRectangle="910, 592, 369, 48" FriendlyName="'TD'" FullSelectorArgument="&lt;webctrl tag='IFRAME' /&gt;&lt;webctrl parentid='invoice_summary_allowInfo_TABLE' tag='TABLE' /&gt;&lt;webctrl isleaf='1' tableRow='3' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='IFRAME' /&gt;&lt;webctrl parentid='invoice_summary_allowInfo_TABLE' tag='TABLE' /&gt;&lt;webctrl isleaf='1' type='' tag='TD' aaname='' /&gt;" Guid="e9cc0abb-4dda-4f08-8f7c-a477e37cb73d" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAXUAAAA0CAYAAAB1jqi1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAD2SURBVHhe7djBCcMwFAXB9F+bGogLCFYVcnyzS9AyA4/fwSL0WX9jjPsAsKFnw0UdYHOvqP/Oc32PY93XzMz227PhXuoAm/P9AhAi6gAhog4QIuoAIaIOECLqACGiDhAi6gAhog4QIuoAIaIOECLqACGiDhAi6gAhog4QIuoAIaIOECLqACGiDhAi6gAhog4QIuoAIaIOECLqACGiDhAi6gAhog4QIuoAIaIOECLqACGiDhAi6gAhog4QIuoAIaIOECLqACGiDhAi6gAhog4QIuoAIaIOECLqACGiDhAi6gAhog4QIuoAIaIOEPKK+pxzmZlZYXNdRr7u0gRTgdUAAAAASUVORK5CYII=" InformativeScreenshot="37aac3a7d49f75c67100ceb34c3fd4ac.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='sps-commerce-platform' title='Fulfillment : SPS Commerce' /&gt;" SearchSteps="Selector, FuzzySelector, Image">
                             <uix:TargetAnchorable.Anchors>
@@ -1016,7 +1016,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </uix:NTypeInto>
-                      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="CommentOut_6">
+                      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="333.6,22.4" sap2010:WorkflowViewState.IdRef="CommentOut_6">
                         <ui:CommentOut.Body>
                           <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="375.2,424.8" sap2010:WorkflowViewState.IdRef="Sequence_15">
                             <sap:WorkflowViewStateService.ViewState>
@@ -1045,7 +1045,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </ui:CommentOut>
-                      <uix:NClick ClickType="Single" DisplayName="Click 'Send'" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="61976831-887a-4398-bff5-65afbb12ea7c" Version="V1">
+                      <uix:NClick ClickType="Single" DisplayName="Click 'Send'" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_10" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="61976831-887a-4398-bff5-65afbb12ea7c" Version="V1">
                         <uix:NClick.Target>
                           <uix:TargetAnchorable BrowserURL="https://cdn.prod.spsc.io/web/fulfillment/ui/fulfillment-ui-v2/de286f426eaba4260ba94340465d75f9eed36152/index.html?access_token=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1qaEJORVF3TkRaQk56ZENORFV3TmpjeVJUSkZOMFU1TTBZMk5EYzRPVFUyUVRjMlFUSkVOZyJ9.eyJodHRwOi8vc3BzL2VudiI6InByb2QiLCJodHRwOi8vc3BzL2lzLXRyaWFsIjpmYWxzZSwiaHR0cDovL3Nwcy9vcmctaWQiOiIxOTI4MTg3NjU3MTcwNzk4MDE5ODI4NTkwNDYzMzQ4NTkxMjc1MCIsImh0dHA6Ly9zcHMvb3JnLW5hbWUiOiJFdGVrY2l0eSBDb3Jwb3JhdGlvbiIsImh0dHA6Ly9zcHMvb3duZXItb3JnLWlkIjoiMTU3NjI3MTQxOTc5NjEyOTE1NjI2MzMzNTc3MTA1MTExODU0MjMyIiwiaHR0cDovL3Nwcy90ZXN0Ijoibm8iLCJodHRwOi8vc3BzL3VzZXItaWQiOiIyMjU2OTQ1ODUyNzI0MDU5NDUwODkyNDIzMzY1OTQwNjc3OTEwNDciLCJpc3MiOiJodHRwczovL2F1dGguc3BzY29tbWVyY2UuY29tLyIsInN1YiI6ImF1dGgwfDIyNTY5NDU4NTI3MjQwNTk0NTA4OTI0MjMzNjU5NDA2Nzc5MTA0NyIsImF1ZCI6WyJhcGk6Ly9hcGkuc3BzY29tbWVyY2UuY29tLyIsImh0dHBzOi8vc3BzY29tbWVyY2UuYXV0aDAuY29tL3VzZXJpbmZvIl0sImlhdCI6MTYzMjk2NDQ2MiwiZXhwIjoxNjMzMDA3NjYyLCJhenAiOiJYZ1ZpWmV2VE1ORklpb1VsZjhWeUNXQURpc2oxYzZ4TiIsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwifQ.tUCGefO_4VnrbW4Bf1pLmfFfbN1Y7eCr1s4hdMu-52ckVFoewrGCVIfXqvJ2IYBssvR7OqOWD1bsX7YW5PkfzuecddM-KmD_Mrrj1XtUkdjwDOU8LhyFzagMsR8f4CRQkeoN0bn89-D_2k6CdQj-FleF5OwvroQ_w2hamiPb-ea1XOcob8uB0lMk_oxsizvRkK-8umaAHiKrvP-jcq3nfA6fOoxzS2HpCE6-c9u4GyFxRqj9yx9Mp29AnkhK7aRYXy9eY4iEb4ihFncJ_ljHmk0KS5p9mS0u-PPttQAK_fGSJ12F1sUKckoCoMVEom37v8uojgXBjT5r37yoHzwg-g&amp;lang=en-US#/transactions/batchProcess/" DesignTimeRectangle="1295, 365, 68, 38" ElementType="Button" FriendlyName="'Send'" FullSelectorArgument="&lt;webctrl tag='IFRAME' /&gt;&lt;webctrl id='data_entry_SEND' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl name='app-fulfillment-rtlic8' tag='IFRAME' /&gt;&lt;webctrl id='data_entry_SEND' tag='BUTTON' type='button' aaname=' Send ' check:text='Send' /&gt;" Guid="ed10375e-b41b-4a78-a71f-53342ad369c5" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEgAAAAqCAYAAAAQ0R0WAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAHlSURBVGhD7Zq9TsMwEIAz9Rl4AyaYGOGNkLIhoGVB6tABZpgyMxTU0ohuVV8gLKBsnTpVijok6tDliJ04tWO316GRanwnfUP8o/g+n+MlXpplQGyHBCEogl6nP3D1PALvOnCS8+4HdyA7qQT1xt9w0n6DVnsI3sPYSVqdEXfwMv3VBZ0+9sG7c1dOxe0ALnoDXRAvM9MEF8ldkKBdkCAEEoRAghBIEAIJQiBBCCQIgQQhNCnIn61BjTVMQvPYQxIsDviupgQJOXG0aeMLXyXgS+OawAJBMUxWbJEpBMb+ZrFA0BxitsY85AoyUSQjQhZaSl7MwYvSopuHQXqtP7bpiPEwHiu9ygpZ4ln058EksbYwgaX8zBByqjaxOUcuiKPsLAtp98s+pcKUNtMxLZOvhIsxqgwLjlgNWVSZnH7DbWJ/QaJa5DE2CuKopW+65VScE1RLWPt21PnXR6xcuJy89oEVyalV5IdxrX+XoE0lLmflPPGeoxYUJflVq39jqiQkit2WQwjZTxBDuzF5dVp3xCyFBCGQIAQShECCEEgQAglCIEEIJAiBBCGQIIStgm764N2H5kku0PkqHJgEnXXfC0kEXD596oLYP4qmwS7CXGiChCRmzzTJBdgpkn/gZCiCiDoZ/AGFa14dh7vccQAAAABJRU5ErkJggg==" InformativeScreenshot="4d95a9438c36c49d3172bd3f283eb02b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='sps-commerce-platform' title='Fulfillment : SPS Commerce' /&gt;" SearchSteps="Selector, FuzzySelector, Image">
                             <uix:TargetAnchorable.Anchors>
@@ -1057,7 +1057,7 @@
                         </uix:NClick.Target>
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
