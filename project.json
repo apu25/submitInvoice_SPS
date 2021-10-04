@@ -3,8 +3,8 @@
   "description": "extract shipment links from result of Saved Search",
   "main": "Main.xaml",
   "dependencies": {
-    "UiPath.Excel.Activities": "[2.11.1-preview]",
-    "UiPath.Mail.Activities": "[1.11.2-preview]",
+    "UiPath.Excel.Activities": "[2.11.2-preview]",
+    "UiPath.Mail.Activities": "[1.12.0-preview]",
     "UiPath.System.Activities": "[21.10.0-preview]",
     "UiPath.Terminal.Activities": "[2.3.0]",
     "UiPath.UIAutomation.Activities": "[21.10.0-preview]"
