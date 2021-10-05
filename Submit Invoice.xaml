@@ -90,7 +90,6 @@
       <AssemblyReference>UiPath.Terminal</AssemblyReference>
       <AssemblyReference>UiPath.Terminal.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="Submit Invoice" sap:VirtualizedContainerService.HintSize="717.6,3423.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
@@ -519,7 +518,7 @@
                 </ui:ExcelReadRange.Range>
               </ui:ExcelReadRange>
             </Sequence>
-            <uix:NApplicationCard AttachMode="SingleWindow" CloseMode="Never" DisplayName="Submit invoice in SPS Portal" sap:VirtualizedContainerService.HintSize="433.6,2392.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="61976831-887a-4398-bff5-65afbb12ea7c" Version="V1" WindowResize="Maximize">
+            <uix:NApplicationCard AttachMode="SingleWindow" CloseMode="Never" DisplayName="Submit invoice in SPS Portal" sap:VirtualizedContainerService.HintSize="433.6,2392.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="61976831-887a-4398-bff5-65afbb12ea7c" Version="V1" WindowResize="Maximize">
               <uix:NApplicationCard.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
@@ -542,13 +541,13 @@
                     </sap:WorkflowViewStateService.ViewState>
                     <uix:NCheckState Exists="{x:Null}" DisplayName="Check Login window" sap:VirtualizedContainerService.HintSize="316.8,22.4" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="61976831-887a-4398-bff5-65afbb12ea7c" Timeout="3" Version="V1">
                       <uix:NCheckState.IfExists>
-                        <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="416.8,719.2" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                        <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="416.8,523.2" sap2010:WorkflowViewState.IdRef="Sequence_11">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <Sequence DisplayName="Login" sap:VirtualizedContainerService.HintSize="375.2,428.8" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                          <Sequence DisplayName="Login" sap:VirtualizedContainerService.HintSize="241.6,428.8" sap2010:WorkflowViewState.IdRef="Sequence_8">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
