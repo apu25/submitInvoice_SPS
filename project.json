@@ -1,7 +1,7 @@
 {
   "name": "Get each shipment links from SPS",
   "description": "extract shipment links from result of Saved Search",
-  "main": "Main.xaml",
+  "main": "Main_back_ok.xaml",
   "dependencies": {
     "UiPath.Credentials.Activities": "[2.0.0]",
     "UiPath.Excel.Activities": "[2.11.3]",
@@ -52,8 +52,8 @@
       "output": []
     },
     {
-      "filePath": "Main.xaml",
-      "uniqueId": "5fa38305-bda6-457e-9805-c94f3b258316",
+      "filePath": "Main_back_ok.xaml",
+      "uniqueId": "5bfbdbcc-eb6b-4835-b1cd-0d08de2e65a3",
       "input": [],
       "output": []
     }
