@@ -1,5 +1,5 @@
 {
-  "name": "Get each shipment links from SPS",
+  "name": "submitInvoice_SPS",
   "description": "extract shipment links from result of Saved Search",
   "main": "Main.xaml",
   "dependencies": {
