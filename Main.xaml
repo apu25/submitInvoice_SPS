@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="extract_url___update_PQ_file__submit_ASN" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="772,925.6" sap2010:WorkflowViewState.IdRef="extract_url___update_PQ_file__submit_ASN_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="extract_url___update_PQ_file__submit_ASN" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="643.2,925.6" sap2010:WorkflowViewState.IdRef="extract_url___update_PQ_file__submit_ASN_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -275,13 +275,13 @@
                   <av:PointCollection x:Key="ConnectorLocation">270,279.2 270,293.6</av:PointCollection>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="SPS Commerce" sap:VirtualizedContainerService.HintSize="433.6,520" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="4fa0c6a1-8d2c-41ca-b97e-3ed22ba4a9a2" Version="V1">
+              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="SPS Commerce" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="4fa0c6a1-8d2c-41ca-b97e-3ed22ba4a9a2" Version="V1">
                 <uix:NApplicationCard.Body>
                   <ActivityAction x:TypeArguments="x:Object">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="241.6,303.2" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="241.6,302.4" sap2010:WorkflowViewState.IdRef="Sequence_22">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -487,7 +487,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </uix:NCheckState>
-                      <Sequence DisplayName="Extract saved search in SPS" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="Sequence_48">
+                      <Sequence DisplayName="Extract saved search in SPS" sap:VirtualizedContainerService.HintSize="802.4,4706.4" sap2010:WorkflowViewState.IdRef="Sequence_48">
                         <Sequence.Variables>
                           <Variable x:TypeArguments="scg:IEnumerable(ui:UiElement)" Name="all_children" />
                           <Variable x:TypeArguments="x:String" Name="str_children_text" />
@@ -505,7 +505,7 @@
                             <x:Boolean x:Key="IsPinned">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <Sequence DisplayName="Get list of saved search directly" sap:VirtualizedContainerService.HintSize="660.8,916" sap2010:WorkflowViewState.IdRef="Sequence_38">
+                        <Sequence DisplayName="Get list of saved search directly" sap:VirtualizedContainerService.HintSize="760.8,908" sap2010:WorkflowViewState.IdRef="Sequence_38">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -524,7 +524,7 @@
                               </ui:Target>
                             </ui:FindChildren.Target>
                           </ui:FindChildren>
-                          <Assign sap:VirtualizedContainerService.HintSize="433.6,61.6" sap2010:WorkflowViewState.IdRef="Assign_1">
+                          <Assign sap:VirtualizedContainerService.HintSize="433.6,60" sap2010:WorkflowViewState.IdRef="Assign_1">
                             <Assign.To>
                               <OutArgument x:TypeArguments="s:String[]">[arr_str_Test]</OutArgument>
                             </Assign.To>
@@ -532,13 +532,13 @@
                               <InArgument x:TypeArguments="s:String[]">[new string(all_children.Count){}]</InArgument>
                             </Assign.Value>
                           </Assign>
-                          <ui:ForEach x:TypeArguments="ui:UiElement" CurrentIndex="[int_Index]" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="433.6,572.8" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[all_children]">
+                          <ui:ForEach x:TypeArguments="ui:UiElement" CurrentIndex="[int_Index]" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="433.6,568" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[all_children]">
                             <ui:ForEach.Body>
                               <ActivityAction x:TypeArguments="ui:UiElement">
                                 <ActivityAction.Argument>
                                   <DelegateInArgument x:TypeArguments="ui:UiElement" Name="item" />
                                 </ActivityAction.Argument>
-                                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="375.2,446.4" sap2010:WorkflowViewState.IdRef="Sequence_37">
+                                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="375.2,443.2" sap2010:WorkflowViewState.IdRef="Sequence_37">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -550,7 +550,7 @@
                                       <OutArgument x:TypeArguments="x:String">[str_children_text]</OutArgument>
                                     </uix:NGetAttribute.Result>
                                   </uix:NGetAttribute>
-                                  <Assign sap:VirtualizedContainerService.HintSize="333.6,61.6" sap2010:WorkflowViewState.IdRef="Assign_2">
+                                  <Assign sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="Assign_2">
                                     <Assign.To>
                                       <OutArgument x:TypeArguments="x:String">[arr_str_Test(int_index)]</OutArgument>
                                     </Assign.To>
@@ -594,7 +594,7 @@
                             </sap:WorkflowViewStateService.ViewState>
                           </ui:ForEach>
                         </Sequence>
-                        <ui:InputDialog OptionsString="{x:Null}" DisplayName="Select saved search" sap:VirtualizedContainerService.HintSize="660.8,295.2" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="List of Saved Search" Options="[arr_str_Test]" Title="Choose saved search in SPS">
+                        <ui:InputDialog OptionsString="{x:Null}" DisplayName="Select saved search" sap:VirtualizedContainerService.HintSize="760.8,295.2" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="List of Saved Search" Options="[arr_str_Test]" Title="Choose saved search in SPS">
                           <ui:InputDialog.Result>
                             <OutArgument x:TypeArguments="x:String">[strSelectedSavedSearch]</OutArgument>
                           </ui:InputDialog.Result>
@@ -605,7 +605,7 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </ui:InputDialog>
-                        <ui:Replace BuilderPattern="[^a-z][^A-Z][^0-9][^_][^-]" DisplayName="Replace special character" sap:VirtualizedContainerService.HintSize="660.8,60" sap2010:WorkflowViewState.IdRef="Replace_1" Input="[strSelectedSavedSearch]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;NONEOF&quot;,&quot;OperationName&quot;:&quot;Not one of&quot;,&quot;OperationValue&quot;:&quot;a-z&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null},{&quot;Index&quot;:1,&quot;OperationID&quot;:&quot;NONEOF&quot;,&quot;OperationName&quot;:&quot;Not one of&quot;,&quot;OperationValue&quot;:&quot;A-Z&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null},{&quot;Index&quot;:2,&quot;OperationID&quot;:&quot;NONEOF&quot;,&quot;OperationName&quot;:&quot;Not one of&quot;,&quot;OperationValue&quot;:&quot;0-9&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null},{&quot;Index&quot;:3,&quot;OperationID&quot;:&quot;NONEOF&quot;,&quot;OperationName&quot;:&quot;Not one of&quot;,&quot;OperationValue&quot;:&quot;_&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null},{&quot;Index&quot;:4,&quot;OperationID&quot;:&quot;NONEOF&quot;,&quot;OperationName&quot;:&quot;Not one of&quot;,&quot;OperationValue&quot;:&quot;-&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="%[^a-z][^A-Z][^0-9][^_][^-]" RegexOption="IgnoreCase, Compiled" Result="[strSelectedSavedSearch]">
+                        <ui:Replace BuilderPattern="[せ㝸䙆ぃ䌶䕅䄰崴䄠低䅍奌›獵⁥景删塅眮椠⁳敭湡湩汧獥⁳搨晥畡瑬漠数慲摮猠穩⁥獩㘠⤴਍ ]+" DisplayName="Replace special character and blank" sap:VirtualizedContainerService.HintSize="760.8,60" sap2010:WorkflowViewState.IdRef="Replace_4" Input="[strSelectedSavedSearch]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ONEOF&quot;,&quot;OperationName&quot;:&quot;One of&quot;,&quot;OperationValue&quot;:&quot;せ㝸䙆ぃ䌶䕅䄰崴䄠低䅍奌›獵⁥景删塅眮椠⁳敭湡湩汧獥⁳搨晥畡瑬漠数慲摮猠穩⁥獩㘠⤴਍ &quot;,&quot;QuantifierFirstValue&quot;:&quot;+&quot;,&quot;QuantifierID&quot;:&quot;OOM&quot;,&quot;QuantifierName&quot;:&quot;At least one (1 or more)&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="[せ㝸䙆ぃ䌶䕅䄰崴䄠低䅍奌›獵⁥景删塅眮椠⁳敭湡湩汧獥⁳搨晥畡瑬漠数慲摮猠穩⁥獩㘠⤴਍ ]+" RegexOption="IgnoreCase, Compiled" Result="[strSelectedSavedSearch]">
                           <ui:Replace.Replacement>
                             <InArgument x:TypeArguments="x:String">
                               <Literal x:TypeArguments="x:String" Value="" />
@@ -618,20 +618,7 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </ui:Replace>
-                        <ui:Replace BuilderPattern="[&quot; &quot;]*" DisplayName="Replace blank" sap:VirtualizedContainerService.HintSize="660.8,60" sap2010:WorkflowViewState.IdRef="Replace_2" Input="[strSelectedSavedSearch]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ONEOF&quot;,&quot;OperationName&quot;:&quot;One of&quot;,&quot;OperationValue&quot;:&quot;\&quot; \&quot;&quot;,&quot;QuantifierFirstValue&quot;:&quot;*&quot;,&quot;QuantifierID&quot;:&quot;ANY&quot;,&quot;QuantifierName&quot;:&quot;Any (0 or more)&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="[&quot; &quot;]*" RegexOption="IgnoreCase, Compiled" Result="[strSelectedSavedSearch]">
-                          <ui:Replace.Replacement>
-                            <InArgument x:TypeArguments="x:String">
-                              <Literal x:TypeArguments="x:String" Value="" />
-                            </InArgument>
-                          </ui:Replace.Replacement>
-                          <sap:WorkflowViewStateService.ViewState>
-                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                            </scg:Dictionary>
-                          </sap:WorkflowViewStateService.ViewState>
-                        </ui:Replace>
-                        <Sequence DisplayName="Create sub folder" sap:VirtualizedContainerService.HintSize="660.8,808.8" sap2010:WorkflowViewState.IdRef="Sequence_41">
+                        <Sequence DisplayName="Create sub folder" sap:VirtualizedContainerService.HintSize="760.8,804" sap2010:WorkflowViewState.IdRef="Sequence_41">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -682,7 +669,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </ui:FolderExistsX>
-                          <If Condition="[B_exist_folder_saved_search]" DisplayName="Create folder of saved search" sap:VirtualizedContainerService.HintSize="619.2,336" sap2010:WorkflowViewState.IdRef="If_1">
+                          <If Condition="[B_exist_folder_saved_search]" DisplayName="Create folder of saved search" sap:VirtualizedContainerService.HintSize="619.2,332.8" sap2010:WorkflowViewState.IdRef="If_1">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -690,7 +677,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                             <If.Then>
-                              <Sequence sap:VirtualizedContainerService.HintSize="200,85.6" sap2010:WorkflowViewState.IdRef="Sequence_39">
+                              <Sequence sap:VirtualizedContainerService.HintSize="200,84.8" sap2010:WorkflowViewState.IdRef="Sequence_39">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -699,7 +686,7 @@
                               </Sequence>
                             </If.Then>
                             <If.Else>
-                              <Sequence sap:VirtualizedContainerService.HintSize="375.2,175.2" sap2010:WorkflowViewState.IdRef="Sequence_40">
+                              <Sequence sap:VirtualizedContainerService.HintSize="375.2,173.6" sap2010:WorkflowViewState.IdRef="Sequence_40">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -710,7 +697,7 @@
                             </If.Else>
                           </If>
                         </Sequence>
-                        <Sequence DisplayName="Extract selected saved search" sap:VirtualizedContainerService.HintSize="333.6,22.4" sap2010:WorkflowViewState.IdRef="Sequence_47">
+                        <Sequence DisplayName="Extract selected saved search" sap:VirtualizedContainerService.HintSize="760.8,2386.4" sap2010:WorkflowViewState.IdRef="Sequence_47">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -827,7 +814,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </uix:NCheckState>
-                          <Sequence DisplayName="Extract results" sap:VirtualizedContainerService.HintSize="719.2,1155.2" sap2010:WorkflowViewState.IdRef="Sequence_46">
+                          <Sequence DisplayName="Extract results" sap:VirtualizedContainerService.HintSize="719.2,1153.6" sap2010:WorkflowViewState.IdRef="Sequence_46">
                             <Sequence.Variables>
                               <Variable x:TypeArguments="sd:DataTable" Name="DT_saved_search" />
                             </Sequence.Variables>
@@ -1006,7 +993,7 @@
                       </Sequence>
                       <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="CommentOut_30">
                         <ui:CommentOut.Body>
-                          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="241.6,240" sap2010:WorkflowViewState.IdRef="Sequence_54">
+                          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="375.2,240" sap2010:WorkflowViewState.IdRef="Sequence_54">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
