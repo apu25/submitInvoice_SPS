@@ -3,12 +3,10 @@
   "description": "extract shipment links from result of Saved Search",
   "main": "Main.xaml",
   "dependencies": {
-    "UiPath.Credentials.Activities": "[2.0.0]",
     "UiPath.Excel.Activities": "[2.11.3]",
-    "UiPath.Mail.Activities": "[1.12.1]",
     "UiPath.System.Activities": "[21.10.0]",
     "UiPath.Terminal.Activities": "[2.3.0]",
-    "UiPath.UIAutomation.Activities": "[21.10.1]"
+    "UiPath.UIAutomation.Activities": "[21.11.0-preview]"
   },
   "webServices": [],
   "entitiesStores": [],
@@ -46,14 +44,14 @@
   "expressionLanguage": "VisualBasic",
   "entryPoints": [
     {
-      "filePath": "Extract  SO url to csv file in SPS.xaml",
-      "uniqueId": "c3060221-e576-431a-b860-52312560d8e7",
+      "filePath": "Main.xaml",
+      "uniqueId": "d97411b2-d94d-4525-8d68-e992663c0f24",
       "input": [],
       "output": []
     },
     {
-      "filePath": "Main.xaml",
-      "uniqueId": "d97411b2-d94d-4525-8d68-e992663c0f24",
+      "filePath": "backup\\Extract  SO url to csv file in SPS.xaml",
+      "uniqueId": "40305ef7-5961-46d7-9356-da7dc125f5be",
       "input": [],
       "output": []
     }
